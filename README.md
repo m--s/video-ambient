@@ -1,7 +1,7 @@
 # video-ambient
 Realtime video ambient backlighting with full control
 
-<img src="demo.gif"  alt="demo video ambient backliting"/>
+<img src="https://raw.githubusercontent.com/m--s/video-ambient/master/demo.gif"  alt="demo video ambient backliting"/>
 
 Zero dependency, framework agnostic, written in TypeScript.
 
@@ -13,6 +13,9 @@ It scales down video to (size px, size px) on an invisible canvas, reads pixel c
 
 Feel like doing more fancy stuff? Got you covered! There is an array with colors in the callback - use it as you want.
 ## Usage
+```sh
+npm i video-ambient
+```
 
 ```typescript
 let gradient;

@@ -1,6 +1,6 @@
 {
   "name": "video-ambient",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Realtime video backlighting with full control. Zero dependency, written in TypeScript",
   "author": "Marcin Sobczak <marcin@sobczak.me> (https://sobczak.me)",
   "keywords": [
