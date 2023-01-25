@@ -1,0 +1,34 @@
+{
+  "name": "video-ambient",
+  "version": "0.0.1",
+  "description": "Realtime video backlighting with full control. Zero dependency, written in TypeScript",
+  "author": "Marcin Sobczak <marcin@sobczak.me> (https://sobczak.me)",
+  "keywords": [
+    "ambient", "video", "backlight", "typescript", "css3", "canvas", "conical gradient"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build-fast": "tsup src/index.ts --format cjs,esm",
+    "build": "pnpm run build-fast -- --dts-resolve",
+    "prepublishOnly": "pnpm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@egoist/prettier-config": "1.0.0",
+    "prettier": "2.5.1",
+    "tsup": "6.0.1",
+    "typescript": "4.5.4"
+  }
+}
